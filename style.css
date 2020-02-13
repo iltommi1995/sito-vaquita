@@ -1,0 +1,1086 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
+
+
+
+
+
+
+
+                                                              /* PARTE GENERALE */
+ 
+
+
+
+
+h1 {
+	font-size: 100px; 
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	position:absolute;
+}
+
+h2 {
+	font-family: 'Roboto', sans-serif; 
+	font-size:30px; 
+	color:#42657f;
+}
+
+p {
+	font-family: Tahoma; 
+	font-size:15px;
+}
+
+#header {
+	width: 100%;
+	height: 166px; 
+	position:fixed; 
+	z-index: 80; 
+	top:0px; 
+	background-color: white; 
+	box-shadow: 0px 1px 3px;
+}
+
+#grigliaheader {
+	width: 1066px;
+	height: 166px; 
+	margin: 0 auto;
+}
+
+#logo {
+	float: left; 
+	margin-top:30px;
+	height: 20px;
+}
+
+#immagine_logo {
+	height:106px;
+}
+
+#nav {
+	float:right; 
+	margin-top:70px;
+}
+
+ul li {
+	display: inline-block; 
+	font-family: 'Roboto', sans-serif;
+	margin-right: 35px; 
+	font-size: 13px; 
+	font-weight: bold;
+	color:#42657f;
+}
+
+ul li a {
+	color: #42657f;
+	text-decoration: none;
+}
+
+ul li a:hover {
+	color:black;
+}
+
+ul li ul li {
+	margin-top:5px;
+	margin-bottom: 5px;
+	margin-right: 0px;
+}
+
+ul li ul li a {
+	color:white;
+	text-decoration: none;
+} 
+
+ul li ul {
+padding: 0px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top:5px;
+}
+
+#drop {
+	position: fixed; 
+	z-index:100; 
+	height:120px; 
+	width:100px;
+	padding-left:0px;
+	padding-right: 0px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  
+  display: none;
+  position: fixed;
+  background-color: #568fb9;
+  width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 120;
+  padding-left:0px;
+  padding-right: 0px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#main {
+	margin-top:166px;
+	overflow: auto;
+	height: auto;
+	margin-bottom:100px;
+}
+
+#footer {
+	width:100%;
+	position: relative;
+	bottom: 0px;
+}
+
+#rettangolo_grigio {
+	position:absolute;
+	width:100%;
+	height: 100px;
+	background: #2E2C31;
+}
+
+#barra_footer {
+	height:118px;
+	width: 707px;
+	position:absolute;
+	background: url(img/barra_footer.png);
+	bottom:-19px;
+	right:0px;
+}
+
+#barrasocial {
+	float:left;
+	position: absolute;
+	bottom: 26px;
+	left:188px;
+	z-index: 70;
+}
+
+#callfondo {
+	position: absolute;	
+	right:213px;
+	z-index: 60;
+	color:white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+}
+
+#scrittafondo {
+	position: absolute;
+	right: 200px;
+	bottom:10px;
+	z-index: 60;
+	color:white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+
+
+
+#scrittafondo a {
+	text-decoration: none;
+	color: white;
+}
+
+#scrittafondo a:hover{
+	color:black;
+}
+
+#bottone_freccia_footer_home {
+	position: absolute;
+	bottom:27px;
+	left:468px;
+	z-index: 65;
+	height:15px;
+	width:15px;
+	background:url(img/bottone_freccia.png);
+	background-size: cover;
+	float:right;
+}
+
+#blocco_freccia_footer:hover #scrittafondo{
+	color:black;
+}
+
+#blocco_freccia_footer:hover #bottone_freccia_footer_home {
+	background:url(img/bottone_freccia_nero.png);
+	background-size: cover;
+}
+
+#documento {
+	float:left;
+	position: absolute;
+	bottom: 70px;
+	left:188px;
+	z-index: 70;
+	font-family: "HeroicCondensed-Black", verdana, sans-serif;
+	color: white;
+	text-decoration: none;
+}
+
+#documento:hover{
+	color:#42657f;
+}
+
+#facebook {
+	margin-right:17px;
+	text-decoration: none;
+}
+
+#twitter {
+	margin-right:17px;
+	text-decoration: none;
+}
+
+#instagram {
+	margin-right:17px;
+	text-decoration: none;
+}
+
+#youtube {
+	margin-right:17px;
+	text-decoration: none;
+}
+
+
+
+.slide {
+	position:relative;
+	height: 300px;
+	background-position: center down; 
+	background-size: cover;
+	width: 100%;
+	z-index: 50;
+	margin-bottom:0px;
+}
+
+.h2_paragrafi {
+	text-align: center;
+  	margin-bottom: 50px;
+}
+
+.blocco_continua_freccia{
+	height:15px; 
+	width:100px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.testo_continua {
+	float:left;
+	text-decoration: none;
+	color:black;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.freccia_continua {
+	height:15px;
+	width:15px;
+	background:url(img/bottone_freccia_nero.png);
+	background-size: cover;
+	float:right;
+}
+
+.prova_a {
+	width:100px;
+}
+
+.prova_a:hover .testo_continua{
+	color:#42657f;
+}
+
+.prova_a:hover .freccia_continua {
+	background: url(img/bottone_freccia_azzurro.png);
+	background-size: cover;
+}
+
+
+
+
+                                                           /*   HOME */
+
+
+
+
+
+
+h1.phoco { 
+	position: absolute;
+	z-index: 65;
+	top:-45px;
+	left:278px;
+}
+
+#slide {
+	position: relative;
+	height:419px;
+}
+
+#immagineslider {
+	position:absolute;
+	top:166px;
+	height: 400px;
+	background-image:url("img/index/vaquita_home.jpg"); 
+	background-position: center down; 
+	background-size: cover;
+	width: 100%;
+	z-index: 50;
+}
+
+#barraslider {
+	position:absolute;
+	z-index: 60;
+	top:278px;
+	height: 141px;
+}
+
+h2.dona {
+	font-size: 18px;
+	position: absolute;
+	z-index: 65;
+	width:200px;
+	top:-15px;
+	color:white;
+}
+
+h2.dona a {
+	color: white;
+	text-decoration: none;
+}
+
+#bottone_freccia {
+	position: absolute;
+	z-index: 65;
+	right:2px;
+	height:18px;
+}
+
+#dona_home_slide {
+	position:absolute;
+	height:19px;
+	width:200px;
+	z-index:65;
+	left: 802px;
+	top:380px;
+}
+
+#dona_home_slide:hover h2{
+	color:black;
+}
+
+#dona_home_slide:hover .freccia_continua_home{
+	background: url(img/bottone_freccia_nero.png);
+	background-size: cover;
+}
+
+.freccia_continua_home {
+	height:18px;
+	width:18px;
+	background:url(img/bottone_freccia.png);
+	background-size: cover;
+	float:right;
+}
+
+p.par_intro {
+	position:absolute;
+	z-index: 75;
+	color:white;
+	left:278px;
+	top: 300px;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+}
+
+#sezioni {
+	position:relative;
+	width:916px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 456px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#sezione_sx {
+	float: left;
+}
+
+#sezione_cent {
+	float: left;
+	margin-left: 86px;
+	margin-right: 86px;
+	top: 0;
+	left: 270px;
+}
+
+#sezione_dx {
+	float:right;
+	top:0;
+	right:0;
+}
+
+.sez { 
+	position: absolute;
+	heigh:400px;
+	width: 196px;
+	color:#42657f;
+	text-align: center;
+}
+
+#call_to_action {
+	position: relative;
+	background-image: url(img/index/call_to_action.jpg);
+	background-position: center down; 
+	background-size: cover;
+	height:320px;
+	width: 100%;
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+
+#scritta_call {
+	position:absolute;
+	width:1066px;
+    height: 176px;
+	font-size:80px;
+	color: white;
+	text-align: center;
+	margin-left:50%;
+	left:-533px;
+}
+
+#scritta_call a {
+	text-decoration: none;
+	color:#42657f;
+}
+
+#scritta_call a:hover {
+	color: white;
+}
+
+#video {
+	width:886px;
+	position: relative;
+	margin: 0 auto 50px auto;
+	height: 239px;
+}
+
+#videovaq {
+	float:left;
+	position:relative;
+	left:0;
+}
+
+#video_testo {
+	width: 344px;
+	height: 234px;
+	float:right;
+	border-style: solid;
+	border-color: #42657f;
+	border-width: 2px;
+	position: relative;
+	right:0;
+	text-align: center;
+	color: #42657f;
+}
+
+
+
+
+
+
+
+
+                                                                /* L'ANIMALE*/
+
+
+
+
+
+
+
+#slide_animale {
+	background-image:url("img/animale/l_animale_slide.jpg"); 
+}
+
+#h1_animale {
+	position:absolute;
+	z-index: 60;
+	top:50%;
+	left:50%;
+	height: 100px;
+	width: 520px;
+	margin-left: -260px;
+	margin-top: -50px;
+}
+
+#sezioni_animale {
+	width: 886px;
+	position: relative;
+	margin: 100px auto 100px auto;
+	height: 1073px;
+}
+
+#descrizione {
+	position:absolute;
+	height: 291px;
+}
+
+#a_descrizione_immagine {
+	float:left;
+}
+
+#descrizione_immagine {	
+	margin-right: 200px;
+	width:436px;
+	height:291px;
+	background: url(img/animale/animale_descrizione.jpg);
+}
+
+#descrizione_immagine:hover{
+	background: url(img/animale/animale_descrizione_onmouseover.jpg);
+}
+
+#descrizione_testo {
+	float: right;
+	text-align: center;
+	height:291px;
+	width:300px;
+	margin-top:-295px;
+}
+
+#habitat {
+	position: absolute;
+	height:291px;
+	width:886px;
+	margin-top:391px;
+}
+
+#habitat_immagine {
+	float:right;
+	background: url(img/animale/animale_habitat.jpg);
+	width:436px;
+	height:291px;
+}
+
+#habitat_immagine:hover {
+	background: url(img/animale/animale_habitat_onmouseover.jpg);
+}
+
+#habitat_testo {
+	float: left;
+	text-align: center;
+	height:291px;
+	width:300px;
+}
+
+#riproduzione {
+	position: absolute;
+	height:291px;
+	margin-top:782px;
+	width:886px;
+}
+
+#riproduzione_immagine {
+	float: left;
+	background: url(img/animale/animale_riproduzione.jpg);
+	width:436px;
+	height:291px;	
+}
+
+#riproduzione_immagine:hover {
+	background: url(img/animale/animale_riproduzione_onmouseover.jpg)
+}
+
+#riproduzione_testo {
+	float: right;
+	text-align: center;
+	height:291px;
+	width:300px;
+}
+
+
+
+
+
+
+
+                                                         /* L'ANIMALE DESCRIZIONE*/
+
+
+
+
+
+
+
+
+#slide_descrizione {
+	background-image:url("img/animale_descrizione/descrizione_slide.jpg"); 
+}
+
+#h1_descrizione {
+	position:absolute;
+	z-index: 60;
+	top:50%;
+	left:50%;
+	height: 100px;
+	width: 630px;
+	margin-left: -315px;
+	margin-top: -50px;
+}
+
+#descrizione_introduzione {
+	width: 886px;
+	margin: 0 auto 0 auto;
+	position: relative;
+	height:335px;
+	margin-top:100px;
+	margin-bottom:100px;
+}
+
+#descrizione_introduzione_testo {
+	position:absolute;
+	left:0px;
+	text-align: justify;
+	width:380px;
+}
+
+#tabella_descrizione {
+	position:absolute;
+	right: 0px;
+}
+
+
+#descrizione_par1 {
+	position:relative;
+	width: 886px;
+   	margin: 0 auto 0 auto;
+	height: auto;
+	height:598px;
+	margin-bottom: 100px;
+	margin-top: 0px;
+}
+
+#descrizione_par1_testo {
+	text-align: justify;
+	margin-top:0px;
+	margin-bottom: 50px;
+}
+
+#descrizione_img_1 {
+	position: absolute;
+	margin-left: 50%;
+	width:540px;
+	left: -270px;
+	margin-bottom:0px;
+}
+
+
+
+
+
+
+
+
+
+                                                         /* L'ANIMALE HABITAT E DIETA*/
+
+
+
+
+
+
+
+
+
+#slide_habitat {
+	background-image:url("img/animale_habitat_e_dieta/habitat_slide.jpg"); 
+}
+
+#h1_habitat {
+	position:absolute;
+	z-index: 60;
+	top:50%;
+	left:50%;
+	height: 100px;
+	width: 800px;
+	margin-left: -400px;
+	margin-top: -50px;
+}
+
+#habitat_introduzione {
+	width: 886px;
+	margin: 100px auto 0 auto;
+	position: relative;
+	height: 335px;
+}
+
+#habitat_introduzione_testo {
+	position:absolute;
+	left:0px;
+	text-align: justify;
+	width: 380px;
+}
+
+#tabella_descrizione {
+	position:absolute;
+	right: 0px;
+}
+
+#habitat_par1 {
+	position:relative;
+	width: 886px;
+   	margin: 100px auto 100px auto;
+	height: 564px;
+}
+
+#habitat_par1_testo {
+	text-align: justify;
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+
+#habitat_img_1 {
+	position: absolute;
+	margin-left: 50%;
+	width:540px;
+	left: -270px;
+	margin-top:0px;
+}
+
+#habitat_par2 {
+	position:relative;
+	width: 886px;
+   	margin: 0 auto 100px auto;
+	height: 548px;
+}
+
+
+#habitat_par2_testo {
+	text-align: justify;
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+
+#habitat_img_2 {
+	position: absolute;
+	margin-left: 50%;
+	width:540px;
+	left: -270px;
+	margin-top: 0px;
+}
+
+
+
+
+
+
+
+
+
+                                                        /* L'ANIMALE RIPRODUZIONE*/
+
+
+
+
+
+
+
+
+#slide_riproduzione {
+	background-image:url("img/animale_riproduzione/riproduzione_slide.jpg"); 
+}
+
+#h1_riproduzione {
+	position:absolute;
+	z-index: 60;
+	top:50%;
+	left:50%;
+	height: 100px;
+	width: 713px;
+	margin-left: -356px;
+	margin-top: -50px;
+}
+
+#riproduzione_introduzione {
+	width: 886px;
+	margin: 100px auto 0 auto;
+	position: relative;
+	height: 335px;
+}
+
+#riproduzione_introduzione_testo {
+	position:absolute;
+	left:0px;
+	text-align: justify;
+	width:380px;
+}
+
+#tabella_descrizione {
+	position:absolute;
+	right:0px;
+}
+
+#riproduzione_par1 {
+	position:relative;
+	width: 886px;
+   	margin: 100px auto 100px auto;
+	height: 540px;
+}
+
+#riproduzione_par1_testo {
+	text-align: justify;
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+
+#tabella_riproduzione {
+	position: absolute;
+	margin-left: 50%;
+	width:540px;
+	left: -270px;
+	margin-top:0px;
+}
+
+
+
+
+
+
+
+
+
+                                                                      /* MINACCE*/
+
+
+
+
+
+
+
+
+#slide_minacce {
+	background-image:url("img/minacce/minacce-slide.jpg"); 
+}
+
+#h1_minacce {
+	position:absolute;
+	z-index: 60;
+	top:50%;
+	left:50%;
+	height: 100px;
+	width: 444px;
+	margin-left: -222px;
+	margin-top: -50px;
+}
+
+#minacce_introduzione {
+	width: 886px;
+	margin: 100px auto 0 auto;
+	position: relative;
+	height: 129px;
+}
+
+#minacce_introduzione_testo {
+	text-align: justify;
+}
+
+
+#minacce_par1 {
+	position:relative;
+	width: 886px;
+   	margin: 100px auto 100px auto;
+	height: 667px;
+}
+
+#minacce_par1_testo {
+	text-align: justify;
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+
+#minacce_par1_video {
+	position: absolute;
+	margin-left: 50%;
+	left: -263px;
+	margin-top:0px;
+}
+
+#minacce_par2 {
+	position:relative;
+	width: 886px;
+   	margin: 100px auto 100px auto;
+	height: 851px;
+}
+
+#minacce_par2_testo {
+	text-align: justify;
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+
+#minacce_par2_video {
+	position: absolute;
+	margin-left: 50%;
+	left: -263px;
+	margin-top:0px;
+}
+
+
+
+
+
+
+
+
+
+
+                                                                         /* CURIOSITA*/
+
+
+
+
+
+
+
+
+
+
+#slide_curiosita {
+	background-image:url("img/curiosita/curiosita_slide.jpg"); 
+}
+
+#h1_curiosita {
+	position:absolute;
+	z-index: 60;
+	top:50%;
+	left:50%;
+	height: 100px;
+	width: 515px;
+	margin-left: -258px;
+	margin-top: -50px;
+}
+
+#sezioni_curiosita {
+	width: 886px;
+	position: relative;
+	margin: 100px auto 100px auto;
+	height: 1464px;
+}
+
+#sez1 {
+	height: 291px;
+	margin-bottom: 100px;
+	position:relative;
+}
+
+#sez1_immagine {
+	float: left;
+	height:291px;
+	width:436px;
+	background: url(img/curiosita/curiosita_img1.jpg);
+}
+
+#sez1_immagine:hover {
+	background: url(img/curiosita/curiosita_img1_onmouseover.jpg)
+}
+#sez1_testo {
+	float: right;
+	text-align: center;
+	height:291px;
+	width:300px;
+}
+
+#sez2 {
+	position: absolute;
+	height:291px;
+	width:886px;
+}
+
+#sez2_immagine {
+	float:right;
+	background: url(img/curiosita/curiosita_img2.jpg);
+	height:291px;
+	width:436px;
+}
+
+#sez2_immagine:hover {
+	background: url(img/curiosita/curiosita_img2_onmouseover.jpg);
+}
+
+#sez2_testo {
+	float: left;
+	text-align: center;
+	height:291px;
+	width:300px;
+}
+
+#sez3 {
+	position: absolute;
+	height:291px;
+	margin-top:391px;
+	width:886px;
+}
+
+#sez3_immagine {
+	float: left;
+	background: url(img/curiosita/curiosita_img3.jpg);
+	height:291px;
+	width:436px;
+}
+
+#sez3_immagine:hover{
+	background: url(img/curiosita/curiosita_img3_onmouseover.jpg);
+}
+
+#sez3_testo {
+	float: right;
+	text-align: center;
+	height:291px;
+	width:300px;
+}
+
+#sez4 {
+	position: absolute;
+	height:291px;
+	width:886px;
+	margin-top:782px;
+}
+
+#sez4_immagine {
+	float:right;
+	background: url(img/curiosita/curiosita_img4.jpg);
+	height:291px;
+	width:436px;
+}
+
+#sez4_immagine:hover {
+	background: url(img/curiosita/curiosita_img4_onmouseover.jpg);
+}
+
+#sez4_testo {
+	float: left;
+	text-align: center;
+	height:291px;
+	width:300px;
+}
+
