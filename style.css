@@ -392,6 +392,14 @@ h2.dona a {
 	background-size: cover;
 }
 
+.continua {
+	text-decoration: none;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+}
+
 .freccia_continua_home {
 	height:18px;
 	width:18px;
